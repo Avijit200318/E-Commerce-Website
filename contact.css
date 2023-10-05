@@ -115,5 +115,8 @@
     .form{
       width: 95vw;
     }
+       form{
+        width: 95vw;
+       }
   }
 
