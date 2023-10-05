@@ -41,7 +41,7 @@ products.forEach((product) =>{
 });
 // js for picture for click
 
-const clickedCardData = [];
+let clickedCardData = [];
 const image = document.querySelectorAll(".card");
 image.forEach(item => {
     item.addEventListener('click', function() {
@@ -68,6 +68,7 @@ image.forEach(item => {
             image2: products[products.findIndex(element => element.name === productName)].image2,
             image3: products[products.findIndex(element => element.name === productName)].image3,
         }
+        clickedCardData = [];
         clickedCardData.push(cardData);
         localStorage.setItem('clickedCardData', JSON.stringify(clickedCardData));
         window.location.href = "./order.html";
