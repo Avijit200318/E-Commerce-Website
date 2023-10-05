@@ -144,4 +144,5 @@ const applyBtn = document.getElementById("apply");
 const buyNow = document.getElementById("buyNow");
 buyNow.addEventListener('click', function() {
     alert("Your Order placed successfully!");
+    window.location.reload();
 })
