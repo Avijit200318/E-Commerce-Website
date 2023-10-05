@@ -77,6 +77,7 @@ h3 {
   background: #21e021;
   color: white;
   border-radius: 5px;
+  border:none;
 }
 #delete{
   width: 63px;
