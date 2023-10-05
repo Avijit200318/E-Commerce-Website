@@ -54,6 +54,18 @@
     <a href="#headerTop"><button id="backTop">Back to Top</button></a>
     <footer id="foot"></footer>
     <!-- end of the html code -->
+    <script>
+    // Check if the pageshow event is supported by the browser
+    if ('pageshow' in window) {
+      window.addEventListener('pageshow', function(event) {
+        // If the persisted property is true or navigation type is 2 (back/forward button used)
+        // then force a reload to ensure the page content is updated
+        if (event.persisted || (event && event.persisted === false && (window.performance.navigation.type === 2))) {
+          window.location.reload();
+        }
+      }, false);
+    }
+  </script>
     <script src="headFoot.js"></script>
     <script src="index.js"></script>
     <script src="phone.js"></script>
