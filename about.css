@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: sans-serif;
+}
+h1{
+    margin: 20px 10px;
+}
+.container{
+    font-size: 20px;
+  margin: 10px;
+}
+.container p{
+    font-weight: bold;
+    margin-top: 15px;
+}
+.container:nth-child(7)
+{
+    margin-bottom: 20px;
+}
+#last{
+    font-weight: lighter;
+}
+#aboutImage{
+    height: 225px;
+  width: 100%;
+}
+@media (max-width: 480px)
+{
+    .container{
+        font-size:18px
+    }
+    #aboutImage{
+        height: 120px;
+    }
+}

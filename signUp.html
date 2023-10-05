@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>SingUp</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h2 id="headding">Sign Up</h2>
+            <form>
+                <div class="inputBox">
+                    <input type="email" placeholder="Username">
+                    <span id="user"><i class="fa-solid fa-user"></i></span>
+                </div>
+                <div class="inputBox">
+                    <input id="password" type="password" placeholder="Password">
+                    <span id="lock"><i id="eye" class="fa-regular fa-eye"></i></span>
+                </div>
+                <div class="inputBox">
+                    <input id="password2" type="password" placeholder="Confirm">
+                    <span id="confirm"><i id="eye2" class="fa-regular fa-eye"></i></span>
+                </div>
+                <div class="inputBox">
+                    <input id="submit" type="submit" value="Sing Up">
+                </div>
+                <p>Already have an account? <a id="link" href="./signIn.html">Login</a></p>
+            </form>
+            <div class="icons">
+                <span><i id="facebook" class="fa-brands fa-facebook"></i></span>
+                <span><i id="google" class="fa-brands fa-google"></i></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        const pasInput1 = document.getElementById("password2");
+        document.getElementById("eye2").addEventListener('click', function () {
+            if (pasInput1.type === "password") {
+                pasInput1.type = "text";
+            }
+            else {
+                pasInput1.type = "password";
+            }
+        });
+        // <i class="fa-regular fa-eye-slash"></i>
+    </script>
+    <script src="button.js"></script>
+</body>
+
+</html>

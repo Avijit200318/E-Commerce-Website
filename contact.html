@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <!-- <link rel="stylesheet" href="try.css"> -->
+    <title>ShopNest/contact.</title>
+</head>
+<body>
+    <header id="headerTop"></header>
+    <!-- end of the navbar -->
+    <div id="preloader"></div>
+
+    <div class="boxImage">
+        <img src="./picture/banar2.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="form">
+            <form action="">
+                <input type="text" placeholder="How can we help you?" required="text" autocomplete="off">
+                <input type="text" placeholder="Full Name*" required="text" autocomplete="off">
+                <input type="text" placeholder="Email Address*" required="email" autocomplete="off">
+                <input type="text" placeholder="Mobile Number*" required="Number" autocomplete="off">
+                <textarea name="" id="" cols="50" rows="10" placeholder="Type text*" required="text" autocomplete="off"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="report">
+            <div class="box1">
+                <h3>Report a safety Emergency</h3>
+                <p>We are commited safety of every ShopNest urer</p>
+                <a href="">Report here</a>
+            </div>
+            <div class="box2">
+                <h3>Issue with your live order?</h3>
+                <a href="">Report here</a>
+            </div>
+        </div>
+    </div>
+    <a href="#headerTop"><button id="backTop">Back to Top</button></a>
+    <footer id="foot">    </footer>
+    <script src="headFoot.js"></script>
+    <script src="index.js"></script>
+    <script>
+        // this script tag is help the active mode of the navbar
+        const contact = document.getElementById("contact");
+        const home = document.getElementById("home");
+        contact.classList.add("active");
+        home.classList.remove("active");
+    </script>
+</body>
+</html>

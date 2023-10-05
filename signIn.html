@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signIn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>SingIN</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2 id="headding">Login</h2>
+            <form id="myForm">
+                <div class="inputBox">
+                    <input type="email" placeholder="Username">
+                    <span id="user"><i class="fa-solid fa-user"></i></span>
+                </div>
+                <div class="inputBox">
+                    <input id="password" type="password" placeholder="Password">
+                    <span id="lock"><i id="eye" class="fa-regular fa-eye"></i></span>
+                </div>
+                <div class="inputBox">
+                    <input id="submit" type="submit" value="Login">
+                </div>
+                <p>Don't have an account? <a id="link" href="./signUp.html">SignUp</a></p>
+                <p>Forget password? <a id="forgetPass" href="#">Click Here</a>
+                    <div id="forget">
+                        <h3>Forget Password? <i class="fa fa-times" aria-hidden="true"></i></h3><hr>
+                        <p>Relax and try to remember your password.</p><hr>
+                        <button>Thanks</button>
+                    </div>
+                </p>
+            </form>
+            <div class="icons">
+                <span><i id="facebook" class="fa-brands fa-facebook"></i></span>
+                <span><i id="google" class="fa-brands fa-google"></i></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        const forgetPassword = document.getElementById("forgetPass");
+        const forgetBox = document.getElementById("forget");
+        forgetPassword.addEventListener('click', function() {
+            forgetBox.style.display = "block";
+            setTimeout(()=> {
+                forgetBox.style.display = "none";
+            },3000);
+        });
+    </script>
+    <script src="button.js"></script>
+</body>
+</html>

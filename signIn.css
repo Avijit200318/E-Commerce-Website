@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("picture/new\ back.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 380px;
+    height: 410px;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    border: 3px solid rgb(129, 129, 215);
+    border-radius: 8px;
+}
+
+.form {
+    height: 386px;
+}
+
+.form h2 {
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+form {
+    padding: 20px;
+}
+
+form .inputBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form .inputBox input {
+    width: 92%;
+    height: 45px;
+    padding: 10px;
+    font-size: 17px;
+    border: 3px solid rgb(129, 129, 215);
+    outline: none;
+    border-radius: 22px;
+    margin: 10px 0;
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+}
+
+#user {
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 98px;
+    font-size: 18px;
+}
+
+#lock {
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 165px;
+    font-size: 18px;
+}
+
+#lock i {
+    cursor: pointer;
+}
+
+form p {
+    color: #fff;
+    margin: 10px 25px;
+}
+
+form p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form p a:hover {
+    color: rgb(178, 178, 195);
+}
+
+#submit {
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    position: relative;
+    bottom: 10px;
+}
+
+.icons span {
+    /* position: absolute; */
+    width: 40px;
+    height: 40px;
+    background: aliceblue;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 50%;
+}
+
+.icons span:nth-child(1):hover {
+    background-color: blue;
+}
+
+.icons span:nth-child(2):hover {
+    background-color: red;
+}
+
+#facebook {
+    color: blue;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+}
+
+#facebook:hover {
+    color: white;
+}
+
+#google {
+    color: red;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+}
+
+#google:hover {
+    color: white;
+}
+
+#forget {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 412px;
+    top: 310px;
+    z-index: 5;
+    height: 161px;
+    border-radius: 5px;
+    right: -22px;
+}
+
+#forget p {
+    color: black;
+}
+
+#forget h3 {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#forget h3 i {
+    position: absolute;
+    left: 385px;
+    font-size: 29px;
+    top: 4px;
+    color: #cc9494;
+}
+
+#forget p {
+    padding: 5px;
+}
+
+#forget button {
+    width: 95px;
+    height: 35px;
+    font-size: 16px;
+    margin: 10px;
+    position: absolute;
+    left: 288px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 92%;
+    }
+    #forget{
+        width: 90%;
+        right: 13px;
+        height: 180px;
+    }
+    #forget button{
+        left: 188px;
+    }
+    #forget h3 i{
+        left: 274px;
+    }
+}

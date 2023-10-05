@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("picture/new\ back.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 380px;
+    height: 442px;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    border: 3px solid rgb(129, 129, 215);
+    border-radius: 8px;
+}
+
+.form {
+    height: 386px;
+}
+
+.form h2 {
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+form {
+    padding: 20px;
+}
+
+form .inputBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form .inputBox input {
+    width: 92%;
+    height: 45px;
+    padding: 10px;
+    font-size: 17px;
+    border: 3px solid rgb(129, 129, 215);
+    outline: none;
+    border-radius: 22px;
+    margin: 10px 0;
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+}
+
+#user {
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 98px;
+    font-size: 18px;
+}
+
+#lock {
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 165px;
+    font-size: 18px;
+}
+#confirm{
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 228px;
+    font-size: 18px;
+}
+form p {
+    color: #fff;
+    margin: 10px 25px;
+}
+
+form p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+form p a:hover{
+    color:rgb(178, 178, 195);
+}
+#submit {
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: transparent;
+    color: #fff;
+}
+#eye, #eye2{
+    cursor: pointer;
+}
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    position: relative;
+    bottom: 10px;
+}
+
+.icons span {
+    /* position: absolute; */
+    width: 40px;
+    height: 40px;
+    background: aliceblue;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 50%;
+}
+.icons span:nth-child(1):hover{
+    background-color: blue;
+}
+.icons span:nth-child(2):hover{
+    background-color: red;
+}
+#facebook{
+    color: blue;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+}
+#facebook:hover{
+    color: white;
+}
+#google{
+    color: red;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+}
+#google:hover{
+    color: white;
+}
+@media (max-width: 480px)
+{
+    .container{
+        width: 92%;
+    }
+}

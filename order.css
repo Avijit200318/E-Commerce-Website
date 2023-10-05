@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    margin-top: 25px;
+    width: 99%;
+    gap: 20px;
+}
+
+.image {
+    width: 400px;
+    /* background: yellow; */
+    height: 535px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 290px;
+    position: absolute;
+    top: 149px;
+
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 556px;
+    left: 22px;
+}
+
+#addToCart {
+    width: 170px;
+    height: 45px;
+    /* background-color: yellow; */
+    /* color: white; */
+    border-radius: 5px;
+    background-color: #13d813;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#buyNow {
+    width: 170px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #289728;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content {
+    margin: 55px 20px;
+    width: 62vw;
+}
+
+.content h2 {
+    font-weight: lighter;
+    margin: 5px 0;
+}
+
+.content p {
+    margin-bottom: 5px;
+}
+
+#ratting {
+    margin-bottom: 4px;
+    font-size: 22px;
+    color: orange;
+    font-weight: bold;
+}
+
+#ratting span {
+    background: orange;
+    color: white;
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+
+#review {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #9f9191;
+    font-weight: bold;
+}
+
+#price {
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#prePrice {
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: line-through;
+    color: #cd8989;
+}
+
+#off {
+    margin-left: 10px;
+    font-size: 16px;
+    color: red;
+    font-weight: bold
+}
+
+#offerBank {
+    font-weight: 550;
+    font-size: 15px;
+}
+
+#tc {
+    text-decoration: none;
+    color: blue;
+    font-weight: 502;
+}
+
+#tc:hover {
+    background: white;
+    color: blue;
+}
+
+#details {
+    margin: 20px 0 6px 0;
+}
+
+/* coupons css start */
+.coupons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 25px;
+}
+
+.coupons p {
+    color: red;
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.coupons label {
+    font-size: 20px;
+}
+
+#inputCoupon {
+    height: 30px;
+    font-weight: bold;
+    padding: 5px;
+    outline: none;
+}
+
+#apply {
+    padding: 7px;
+    width: 63px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#apply:hover {
+    background-color: rgb(108, 108, 220);
+}
+
+/* coupons css end */
+.colors .item img {
+    width: 109px;
+    height: 131px;
+}
+
+.colors .item .on {
+    border: 3px solid blue;
+}
+
+.colors {
+    margin: 20px;
+    display: flex;
+    gap: 25px;
+}
+
+.item {
+    margin: 10px;
+    border: 3px solid #dbb4b4;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item.on,
+.item:hover {
+    border: 3px solid blue;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    height: 125px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.rating img {
+    cursor: pointer;
+}
+
+@media (max-width: 830px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .imgContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    #btn {
+        left: auto;
+        gap: 60px;
+    }
+
+    .image {
+        height: 510px;
+    }
+
+    .content {
+        margin: 0 60px;
+        width: 90%;
+    }
+
+    .colors {
+        margin: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* .container{
+        flex-direction: column;
+    } */
+    #btn {
+        gap: 11px;
+        left: 10px;
+        top: 490px;
+    }
+
+    .image {
+        height: 390px;
+    }
+
+    .image img {
+        width: 263px;
+        top: 105px;
+    }
+
+    .content {
+        width: 92%;
+        margin: 55px 20px;
+    }
+
+    /* css for coupons */
+    .coupons {
+        gap: 5px;
+        width: 100%;
+    }
+
+    .coupons label {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    #inputCoupon {
+        width: 140px;
+    }
+
+    /* end of css for coupons */
+    .colors .item img {
+        width: 90px;
+        height: 110px;
+    }
+
+    .colors {
+        gap: 15px;
+        position: relative;
+        right: 21px;
+        margin: 20px;
+    }
+
+    .item {
+        margin: 10px 0;
+    }
+
+    #offerBank {
+        margin-top: 15px;
+    }
+
+    .rating img {
+        width: 100%;
+        height: 86px;
+
+    }
+}
+
+@media (max-width: 360px) {
+    .colors {
+        right: 32px;
+    }
+
+    #btn {
+        left: 4px;
+    }
+    
+} 
+
+/* 
+top: 934px;
+  font-size: 13px;
+  font-weight: bold;
+  left: 88px;
+} */
