@@ -22,6 +22,18 @@
     </div>
     <a href="#headerTop"><button id="backTop">Back to Top</button></a>
     <footer id="foot"> </footer>
+    <script>
+    // Check if the pageshow event is supported by the browser
+    if ('pageshow' in window) {
+      window.addEventListener('pageshow', function(event) {
+        // If the persisted property is true or undefined, the page is loaded from the cache
+        // So, force a reload to ensure the page content is updated
+        if (event.persisted) {
+          window.location.reload();
+        }
+      }, false);
+    }
+  </script>
     <script src="headFoot.js"></script>
     <script src="index.js"></script>
     <script src="order.js"></script>
