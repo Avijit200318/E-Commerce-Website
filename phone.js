@@ -47,7 +47,7 @@ products.forEach(product => {
 
 
 // for image click
-const clickedCardData = [];
+let clickedCardData = [];
 const image = document.querySelectorAll(".card");
 image.forEach(item => {
     item.addEventListener('click', function() {
@@ -82,6 +82,7 @@ image.forEach(item => {
         };
 
         // Push the card data to the clickedCardData array
+        clickedCardData = [];
         clickedCardData.push(cardData);
         localStorage.setItem('clickedCardData', JSON.stringify(clickedCardData));
         // You can also do additional actions here, like redirecting to another page
