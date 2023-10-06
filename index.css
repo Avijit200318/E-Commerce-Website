@@ -400,14 +400,12 @@ header .search {
         background-size: 120%;
         top: -75px;
     }
-}
-
     .loginBoxItem {
         border-bottom: none;
     }
     #cart:hover{
     background: #020242;
-}
+    }
     #cartLogo{
         left: 35px;
     }
