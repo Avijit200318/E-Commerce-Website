@@ -58,6 +58,10 @@ form .inputBox input {
     font-weight: bold;
 }
 
+input::placeholder{
+    color:whitesmoke;
+}
+
 #user {
     color: white;
     position: absolute;
