@@ -393,6 +393,22 @@ header .search {
     }
 }
 
+@media (max-width: 830px) {
+    #loginBox {
+        right: 644px;
+        top: 279px;
+        background-color: #020242;
+        color: white;
+    }
+
+    .loginBoxItem {
+        border-bottom: none;
+    }
+    #cartLogo{
+        left: 35px;
+    }
+}
+
 @media (max-width: 480px) {
     #preloader {
         /* background-size: 30%; */
