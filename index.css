@@ -399,6 +399,7 @@ header .search {
         width: 100%;
         background-size: 120%;
         top: -75px;
+        height: 111vh;
     }
     .loginBoxItem {
         border-bottom: none;
