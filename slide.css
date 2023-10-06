@@ -329,6 +329,7 @@ body {
     }
     .container{
         width: 105%;
+        margin:0;
     }
     .slide img{
         width: 106vw;
