@@ -333,4 +333,10 @@ body {
     }
     .slide{
         width: 105vw;
+    .navigation-manual {
+        margin-top: -382px;
+    }
+    .navigation-auto {
+        margin-top: 119px;
+    }
 }
