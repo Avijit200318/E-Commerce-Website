@@ -17,7 +17,7 @@ function createCard(productName, productPrice, productImage, productPrePrice, pr
     <p id="ratting">&#9733; &#9733; &#9733; &#9733; &#9734; <span>4.6 ratings</span></p>
     <p id="review">1,20,000 ratings & 9,975 reviews</p>
     <p class="firstPrice" id="price">${productPrice} <span id="prePrice">${productPrePrice}</span><span id="off">${productOff}</span></p>
-    <p class="secondPrice" id="price">₹0 <span id="prePrice">${productPrePrice}</span><span id="off">100%</span></p>
+    <p class="secondPrice" id="price">₹0 <span id="prePrice">${productPrePrice}</span><span id="off">100% off</span></p>
     <p>+ &#8377;29 Secured Packaging Free</p>
     <p id="offerBank">Available Offers</p>
     <p><span id="offerBank">Bank Offer</span> 10% off IDFC Bank Credit Card <a id="tc" href="">T&C</a></p>
